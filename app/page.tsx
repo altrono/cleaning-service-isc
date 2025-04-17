@@ -15,7 +15,7 @@ export default function HomePage() {
 
         {/* Marquee */}
         <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md py-3 border-t border-white/20">
-          <Marquee speed={100}>
+          <Marquee speed={1000}>
             <div className="flex items-center gap-8 px-4">
               <div className="flex items-center gap-2 text-white font-medium">
                 <Sparkles className="h-5 w-5 text-yellow-300" /> PROFESSIONAL CLEANING SERVICES
@@ -41,24 +41,24 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="w-full py-16 md:py-24">
+      <section className="w-full py-16 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-2">
               Our Services
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
               Professional Cleaning Solutions
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="max-w-[700px] text-primary/60 md:text-xl">
               We offer a range of professional cleaning services to meet your needs.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* House Cleaning */}
-            <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
-              <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group text-primary relative overflow-hidden rounded-lg border border-blue-200 bg-background p-2 transition-all hover:shadow-lg">
+              {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" /> */}
               <div className="relative aspect-video overflow-hidden rounded-md">
                 <Image
                   src="/isc-1.png"
@@ -76,7 +76,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
+                  className="border-blue-200 w-full  group-hover:bg-primary group-hover:text-white transition-colors"
                 >
                   <Link href="/services#house-cleaning">Learn More</Link>
                 </Button>
@@ -84,8 +84,8 @@ export default function HomePage() {
             </div>
 
             {/* Office Cleaning */}
-            <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
-              <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group text-primary relative overflow-hidden rounded-lg border border-blue-200 bg-background p-2 transition-all hover:shadow-lg">
+              {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" /> */}
               <div className="relative aspect-video overflow-hidden rounded-md">
                 <Image
                   src="/isc-2.png"
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
+                  className="border-blue-200 w-full  group-hover:bg-primary group-hover:text-white transition-colors"
                 >
                   <Link href="/services#office-cleaning">Learn More</Link>
                 </Button>
@@ -111,10 +111,10 @@ export default function HomePage() {
             </div>
 
             {/* Contract Cleaning */}
-            <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
-              <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group text-primary relative overflow-hidden rounded-lg border border-blue-200 bg-background p-2 transition-all hover:shadow-lg">
+              {/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-background/80 opacity-0 group-hover:opacity-100 transition-opacity" /> */}
               <div className="relative aspect-video overflow-hidden rounded-md">
-                <Image
+              <Image
                   src="/contract-cleaning.jpg"
                   alt="Contract Cleaning"
                   fill
@@ -122,7 +122,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-xl mb-2">Contract Cleaning</h3>
+              <h3 className="font-semibold text-xl mb-2">Contract Cleaning</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Our contract cleaning services provide regular scheduled cleaning for businesses and residential
                   properties.
@@ -130,25 +130,26 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
+                  className="border-blue-200 w-full  group-hover:bg-primary group-hover:text-white transition-colors"
                 >
                   <Link href="/services#contract-cleaning">Learn More</Link>
                 </Button>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
 
       {/* Before & After Section */}
-      <section className="w-full py-16 md:py-24 bg-muted">
+      <section className="w-full py-16 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-2">
               Transformations
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Before & After</h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">Before & After</h2>
+            <p className="max-w-[700px] text-primary/60 md:text-xl">
               See the difference our professional cleaning services can make.
             </p>
           </div>
@@ -171,8 +172,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">Kitchen Deep Clean</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold text-lg text-primary">Kitchen Deep Clean</h3>
+                <p className="text-sm text-primary/60">
                   Complete transformation of a kitchen with our deep cleaning service.
                 </p>
               </div>
@@ -195,8 +196,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">Office Carpet Cleaning</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold text-lg text-primary">Office Carpet Cleaning</h3>
+                <p className="text-sm text-primary/60">
                   Revitalized office carpet with our professional cleaning equipment.
                 </p>
               </div>
@@ -212,8 +213,8 @@ export default function HomePage() {
             <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-2">
               Our Process
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How We Work</h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <h2 className="text-3xl text-primary font-bold tracking-tighter sm:text-4xl md:text-5xl">How We Work</h2>
+            <p className="max-w-[700px] text-primary/60 md:text-xl">
               Our simple and effective process ensures a seamless cleaning experience.
             </p>
           </div>
@@ -225,8 +226,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">
                   1
                 </div>
-                <h3 className="text-xl font-bold">Book</h3>
-                <p className="text-muted-foreground">Schedule your cleaning service online or by phone.</p>
+                <h3 className="text-xl font-bold text-primary">Book</h3>
+                <p className="text-primary/60">Schedule your cleaning service online or by phone.</p>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-primary/30 -z-10">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary"></div>
@@ -239,8 +240,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-bold">Confirm</h3>
-                <p className="text-muted-foreground">We'll confirm your appointment and cleaning requirements.</p>
+                <h3 className="text-primary text-xl font-bold">Confirm</h3>
+                <p className="text-primary/60">We'll confirm your appointment and cleaning requirements.</p>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-primary/30 -z-10">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary"></div>
@@ -253,8 +254,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">
                   3
                 </div>
-                <h3 className="text-xl font-bold">Clean</h3>
-                <p className="text-muted-foreground">Our professional team will clean your space thoroughly.</p>
+                <h3 className="text-primary text-xl font-bold">Clean</h3>
+                <p className="text-primary/60">Our professional team will clean your space thoroughly.</p>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-primary/30 -z-10">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary"></div>
@@ -267,8 +268,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">
                   4
                 </div>
-                <h3 className="text-xl font-bold">Enjoy</h3>
-                <p className="text-muted-foreground">Enjoy your clean and refreshed space.</p>
+                <h3 className="text-primary text-xl font-bold">Enjoy</h3>
+                <p className="text-primary/60">Enjoy your clean and refreshed space.</p>
               </div>
             </div>
           </div>
@@ -276,28 +277,28 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-full py-16 md:py-24 bg-muted">
+      <section className="w-full py-16 md:py-24 ">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-2">
               Testimonials
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Clients Say</h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <h2 className="text-primary text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Clients Say</h2>
+            <p className="max-w-[700px] text-primary/60 md:text-xl">
               Don't just take our word for it. Here's what our satisfied customers have to say.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <Card className="bg-background border shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-background border border-primary/60 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-primary/60 mb-6">
                   "ISC Cleaning Services did an amazing job with our house. The team was professional, thorough, and
                   paid attention to every detail. Our home has never looked better!"
                 </p>
@@ -307,21 +308,21 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Jane Doe</h4>
-                    <p className="text-sm text-muted-foreground">Residential Client</p>
+                    <p className="text-sm text-primary/60">Residential Client</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Testimonial 2 */}
-            <Card className="bg-background border shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-background border border-primary/60 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-primary/60 mb-6">
                   "We've been using ISC for our office cleaning for over a year now. Their consistent quality and
                   reliability have made them an invaluable partner for our business."
                 </p>
@@ -331,21 +332,21 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Michael Smith</h4>
-                    <p className="text-sm text-muted-foreground">Business Owner</p>
+                    <p className="text-sm text-primary/60">Business Owner</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Testimonial 3 */}
-            <Card className="bg-background border shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-background border border-primary/60 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-primary/60 mb-6 ">
                   "The custom package generator helped me find exactly what I needed. The cleaning team was professional
                   and the results were outstanding. Highly recommend!"
                 </p>
@@ -355,7 +356,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Amanda Johnson</h4>
-                    <p className="text-sm text-muted-foreground">Apartment Resident</p>
+                    <p className="text-sm text-primary/60">Apartment Resident</p>
                   </div>
                 </div>
               </CardContent>
@@ -369,11 +370,11 @@ export default function HomePage() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold">500+</div>
+              <div className="text-4xl font-bold">100+</div>
               <p className="text-white/80">Happy Clients</p>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold">1,200+</div>
+              <div className="text-4xl font-bold">200+</div>
               <p className="text-white/80">Cleanings Completed</p>
             </div>
             <div className="space-y-2">
@@ -392,17 +393,17 @@ export default function HomePage() {
       <section className="w-full py-16 md:py-24 bg-background border-t">
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+            <h2 className="text-3xl text-primary font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
               Ready for a Cleaner Space?
             </h2>
-            <p className="text-muted-foreground md:text-xl mb-8">
+            <p className="text-primary/60 md:text-xl mb-8">
               Contact us today to schedule your cleaning service or get a custom quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="/contact">Book Now</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary">
                 <Link href="/package-generator">Generate Custom Package</Link>
               </Button>
             </div>

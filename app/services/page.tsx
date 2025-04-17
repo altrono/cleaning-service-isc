@@ -23,7 +23,7 @@ export default function ServicesPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <Tabs defaultValue="house" className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-3 bg-primary/80 text-white">
               <TabsTrigger value="house" id="house-cleaning">
                 House Cleaning
               </TabsTrigger>
@@ -36,19 +36,19 @@ export default function ServicesPage() {
             </TabsList>
 
             <TabsContent value="house" className="mt-6">
-              <Card>
+              <Card className="bg-primary/20 border-primary/60">
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <Home className="h-5 w-5 text-primary" />
-                    <CardTitle>House Cleaning Services</CardTitle>
+                    <CardTitle className="text-primary">House Cleaning Services</CardTitle>
                   </div>
-                  <CardDescription>Professional cleaning for your home</CardDescription>
+                  <CardDescription className="text-primary/60">Professional cleaning for your home</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">What We Offer</h3>
-                      <ul className="space-y-2">
+                      <h3 className="text-lg font-semibold mb-2 text-primary">What We Offer</h3>
+                      <ul className="space-y-2 text-primary">
                         <li className="flex items-start gap-2">
                           <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                           <span>Deep cleaning of all rooms</span>
@@ -77,7 +77,7 @@ export default function ServicesPage() {
                     </div>
                     <div className="relative h-[250px] rounded-lg overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=500&width=800"
+                        src="/isc-2.png?height=500&width=800"
                         alt="House Cleaning"
                         fill
                         className="object-cover"
