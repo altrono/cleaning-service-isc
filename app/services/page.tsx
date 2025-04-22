@@ -36,7 +36,7 @@ export default function ServicesPage() {
             </TabsList>
 
             <TabsContent value="house" className="mt-6">
-              <Card className="bg-primary/20 border-primary/60">
+              <Card className="bg-white border-primary/60">
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <Home className="h-5 w-5 text-primary" />
@@ -85,8 +85,9 @@ export default function ServicesPage() {
                     </div>
                   </div>
                   <div className="pt-4">
+                    {/* 072 3654440 - fergus - feturner11@gmail.com */}
                     <h3 className="text-lg font-semibold mb-2">Why Choose Our House Cleaning</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-primary/60 mb-4">
                       Our house cleaning services are designed to give you more time to enjoy your home and less time
                       cleaning it. We use eco-friendly products and follow a detailed cleaning checklist to ensure your
                       home is spotless.
@@ -100,19 +101,19 @@ export default function ServicesPage() {
             </TabsContent>
 
             <TabsContent value="office" className="mt-6">
-              <Card>
+              <Card className="bg-white">
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <Building2 className="h-5 w-5 text-primary" />
-                    <CardTitle>Office Cleaning Services</CardTitle>
+                    <CardTitle className="text-primary">Office Cleaning Services</CardTitle>
                   </div>
-                  <CardDescription>Keep your workplace clean and professional</CardDescription>
+                  <CardDescription className="text-primary/60">Keep your workplace clean and professional</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">What We Offer</h3>
-                      <ul className="space-y-2">
+                      <h3 className="text-lg font-semibold mb-2 text-primary">What We Offer</h3>
+                      <ul className="space-y-2 text-primary/60">
                         <li className="flex items-start gap-2">
                           <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                           <span>Desk and workstation cleaning</span>
@@ -150,7 +151,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="pt-4">
                     <h3 className="text-lg font-semibold mb-2">Why Choose Our Office Cleaning</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-primary/60 mb-4">
                       A clean office creates a positive impression on clients and provides a healthier environment for
                       employees. Our office cleaning services are scheduled at your convenience, with minimal disruption
                       to your business operations.
@@ -164,19 +165,19 @@ export default function ServicesPage() {
             </TabsContent>
 
             <TabsContent value="contract" className="mt-6">
-              <Card>
+              <Card className="bg-white">
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <ClipboardCheck className="h-5 w-5 text-primary" />
-                    <CardTitle>Contract Cleaning Services</CardTitle>
+                    <CardTitle className="text-primary">Contract Cleaning Services</CardTitle>
                   </div>
-                  <CardDescription>Regular scheduled cleaning services</CardDescription>
+                  <CardDescription className="text-primary/60">Regular scheduled cleaning services</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">What We Offer</h3>
-                      <ul className="space-y-2">
+                      <h3 className="text-lg font-semibold mb-2 text-primary">What We Offer</h3>
+                      <ul className="space-y-2 text-primary/60">
                         <li className="flex items-start gap-2">
                           <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                           <span>Customized cleaning schedules</span>
@@ -214,7 +215,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="pt-4">
                     <h3 className="text-lg font-semibold mb-2">Why Choose Our Contract Cleaning</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-primary/60 mb-4">
                       Our contract cleaning services provide peace of mind with regular scheduled cleaning. We offer
                       competitive rates for ongoing services and ensure consistent quality with our dedicated cleaning
                       teams.
@@ -231,12 +232,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white/80">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Pricing</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl">
+              <h2 className="text-3xl text-primary font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Pricing</h2>
+              <p className="max-w-[700px] text-primary/60 md:text-xl">
                 Transparent pricing for our cleaning services. Contact us for a custom quote based on your specific
                 needs.
               </p>

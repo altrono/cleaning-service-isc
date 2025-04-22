@@ -6,6 +6,8 @@ import { CheckCircle2, Star, Sparkles } from "lucide-react"
 import HeroCarousel from "@/components/hero-carousel"
 import Marquee from "@/components/marquee"
 
+{/* 072 3654440 - fergus - feturner11@gmail.com */}
+// ALADJI ALADJI +244 922 694 771
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-[calc(100vh-4rem)]">
